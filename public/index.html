@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+
+    <div class="accountDetail">
+        <button id="logoutBtn">LogOut</button>
+        <div class="fotoIcon"></div>
+        <div class="name">
+            <h3 id="name">Luiz Felipe</h3>
+        </div>
+    </div>
+
+    <div class="articles">
+        <div class="createArticle">
+            <div id="editor"></div>
+            <button id="createArticleBtn">Create Article</button>
+        </div>
+
+        <div class="allArticles">
+            <input type="text" class="searchArticle">
+        </div>
+    </div>
+
+    <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ header: [1, 2, false] }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block'],
+                ],
+            },
+        });
+    </script>
+</body>
+
+</html>

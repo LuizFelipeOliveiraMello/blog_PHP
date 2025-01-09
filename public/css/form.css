@@ -1,0 +1,103 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    padding: 15px;
+    text-align: right;
+}
+
+.header .header-btn button {
+    background-color: #50b3a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .header-btn button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .header-btn button:hover {
+    background-color: #469e8c;
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Form Element Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form input[type="submit"] {
+    background-color: #50b3a2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #469e8c;
+}
+
+.form input:focus {
+    border-color: #50b3a2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(77, 179, 162, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
